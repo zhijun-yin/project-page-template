@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一个可定制的项目主页模板。全部内容为占位示例。">
+  <meta name="color-scheme" content="light dark">
+  <title>Project Page — 项目主页模板</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>body { margin: 0; } html { scroll-behavior: smooth; } @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }</style>
+  <script src="assets/config.js" defer></script>
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <!-- Design assumptions: a reusable public project page; every name, link and claim is a placeholder. -->
+  <div class="pht-site" id="project-studio" data-theme="system">
+    <div class="pht-wrap">
+      <header class="pht-nav">
+        <a class="pht-brand" href="#studio-home" aria-label="回到首页"><span class="pht-brand-mark" aria-hidden="true"></span><span data-text="name">[项目名称]</span><small>TEMPLATE</small></a>
+        <nav class="pht-nav-links" aria-label="页面导航" id="studio-menu" data-menu data-open="false">
+          <a href="#studio-about">项目概览</a><a href="#studio-showcase">项目展示</a><a href="#studio-resources">资源</a>
+        </nav>
+        <div class="pht-nav-actions">
+          <button class="pht-icon-button cursor-interaction" type="button" data-theme-toggle aria-label="切换外观" aria-pressed="false"><span class="pht-sun" aria-hidden="true"></span></button>
+          <button class="pht-icon-button pht-menu-button cursor-interaction" type="button" data-menu-toggle aria-label="展开页面导航" aria-expanded="false" aria-controls="studio-menu"><span class="pht-menu-lines" aria-hidden="true"></span></button>
+        </div>
+      </header>
+      <main id="studio-home">
+        <section class="pht-hero" aria-labelledby="studio-title">
+          <div>
+            <div class="pht-kicker">A place for your next idea</div>
+            <h1 id="studio-title" data-text="tagline">给一个好想法，
+一个好看的起点。</h1>
+            <p class="pht-description" data-text="description">用一两句话介绍项目解决的问题、核心价值，以及谁会从中受益。</p>
+            <div class="pht-buttons"><a class="pht-button pht-button-primary cursor-interaction" href="#studio-about">了解项目 <span aria-hidden="true">↗</span></a><a class="pht-button cursor-interaction" data-link="repository" aria-disabled="true">查看代码 <span class="pht-pending">待添加</span></a></div>
+            <div class="pht-tags"><span>开源项目</span><span>研究展示</span><span>产品原型</span></div>
+          </div>
+          <div class="pht-cover-stage" role="img" aria-label="项目封面的抽象占位图，没有真实项目内容">
+            <div class="pht-cover-grid" aria-hidden="true"></div><div class="pht-cover-back" aria-hidden="true"></div>
+            <div class="pht-cover"><div class="pht-cover-head"><span>YOUR IDEA, DEFINED.</span><span>＋</span></div><div class="pht-cover-title">YOUR<br>PROJECT.</div><div class="pht-cover-foot"><span>项目视觉占位</span><span class="pht-cover-lines" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></span></div></div>
+            <div class="pht-floating-tag">{ make it yours }</div>
+          </div>
+        </section>
+        <section class="pht-overview" id="studio-about" aria-labelledby="studio-about-title"><div><h2 class="pht-section-heading" id="studio-about-title">关于这个项目</h2><div class="pht-section-note">一个清楚的介绍，比一堆术语更好。</div></div><p>在这里描述项目的背景、希望解决的问题，以及你的方法。把最值得关注的信息放在前面，让第一次来到这里的人也能快速理解。此处为可替换的项目简介占位。</p></section>
+        <section class="pht-features" aria-label="项目亮点占位">
+          <article class="pht-feature" data-feature><div class="pht-feature-label" data-feature-label>核心亮点</div><h3 data-feature-title>[亮点标题一]</h3><p data-feature-description>描述一个值得关注的能力。说明它如何帮助使用者，让价值比术语更清楚。</p></article>
+          <article class="pht-feature" data-feature><div class="pht-feature-label" data-feature-label>设计思路</div><h3 data-feature-title>[亮点标题二]</h3><p data-feature-description>介绍与常见方案不同的地方，用一个具体场景解释你的设计选择。</p></article>
+          <article class="pht-feature" data-feature><div class="pht-feature-label" data-feature-label>实际体验</div><h3 data-feature-title>[亮点标题三]</h3><p data-feature-description>给读者一个继续探索的理由，可以是使用方式、适用场景或可扩展性。</p></article>
+        </section>
+        <section id="studio-showcase" aria-labelledby="studio-showcase-title">
+          <div class="pht-section-top"><h2 class="pht-section-heading" id="studio-showcase-title">让想法看得见。</h2><span class="pht-caption">截图、演示或结果图的位置</span></div>
+          <div class="pht-showcase">
+            <figure class="pht-example" style="margin:0"><div class="pht-example-visual" role="img" aria-label="界面截图占位"><div class="pht-mini-window" aria-hidden="true"><div class="pht-mini-top"><b></b><b></b><b></b></div><div class="pht-mini-content"><div class="pht-mini-text"><b></b><b></b><b></b><b></b></div><div class="pht-mini-image"></div></div></div></div><figcaption class="pht-example-caption"><span>[演示或截图标题]</span><span>展示图占位</span></figcaption></figure>
+            <figure class="pht-example" style="margin:0"><div class="pht-example-visual" role="img" aria-label="概念示意图占位"><div class="pht-layer" aria-hidden="true"></div><div class="pht-layer" aria-hidden="true"></div><div class="pht-layer">your visual</div></div><figcaption class="pht-example-caption"><span>[成果或案例标题]</span><span>示意图占位</span></figcaption></figure>
+          </div>
+        </section>
+        <section class="pht-resources" id="studio-resources" aria-labelledby="studio-resources-title"><div><h2 class="pht-section-heading" id="studio-resources-title">继续探索</h2><div class="pht-section-note">把介绍连接到代码、文档和实际体验。</div></div><div class="pht-resource-links"><a class="pht-button cursor-interaction" data-link="documentation" aria-disabled="true">阅读文档 <span class="pht-pending">待添加</span></a><a class="pht-button cursor-interaction" data-link="demo" aria-disabled="true">体验演示 <span class="pht-pending">待添加</span></a></div></section>
+      </main>
+      <footer class="pht-footer"><span class="pht-footer-brand">PROJECT / TEMPLATE</span><span>所有内容均为占位示例 · [年份] [署名]</span></footer>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一个可定制的研究项目主页模板。作者、机构、成果和引用均为占位示例。">
+  <meta name="color-scheme" content="light dark">
+  <title>Project Page — 研究展示模板</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>body { margin: 0; } html { scroll-behavior: smooth; } @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }</style>
+  <script src="assets/config.js" defer></script>
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <!-- A research presentation variant with explicit author, affiliation, result and citation placeholders. -->
+  <div class="pht-site pht-research" id="project-research" data-theme="system">
+    <div class="pht-wrap">
+      <header class="pht-nav">
+        <a class="pht-brand" href="#research-home" aria-label="回到首页"><span class="pht-brand-mark" aria-hidden="true"></span><span data-text="name">[项目名称]</span><small>TEMPLATE</small></a>
+        <nav class="pht-nav-links" aria-label="页面导航" id="research-menu" data-menu data-open="false"><a href="#research-abstract">摘要</a><a href="#research-method">方法</a><a href="#research-citation">引用</a></nav>
+        <div class="pht-nav-actions"><button class="pht-icon-button cursor-interaction" type="button" data-theme-toggle aria-label="切换外观" aria-pressed="false"><span class="pht-sun" aria-hidden="true"></span></button><button class="pht-icon-button pht-menu-button cursor-interaction" type="button" data-menu-toggle aria-label="展开页面导航" aria-expanded="false" aria-controls="research-menu"><span class="pht-menu-lines" aria-hidden="true"></span></button></div>
+      </header>
+      <main id="research-home">
+        <section class="pht-research-hero" aria-labelledby="research-title"><div class="pht-kicker">Research project template</div><h1 id="research-title" data-text="researchTitle">[研究项目标题]</h1><p class="pht-research-subtitle" data-text="researchSubtitle">在这里放置研究的副标题或一句话贡献总结。</p><div class="pht-authors"><span data-author>[作者姓名]</span><span data-author>[作者姓名]</span><span data-author>[作者姓名]</span></div><div class="pht-affiliation" data-text="affiliation">[机构名称 · 发表场合 · 年份]</div><div class="pht-buttons"><a class="pht-button pht-button-primary cursor-interaction" data-link="paper" aria-disabled="true">论文 <span class="pht-pending">待添加</span></a><a class="pht-button cursor-interaction" data-link="repository" aria-disabled="true">代码 <span class="pht-pending">待添加</span></a><a class="pht-button cursor-interaction" href="#research-citation">引用信息 <span aria-hidden="true">↓</span></a></div></section>
+        <figure class="pht-research-preview"><div class="pht-triptych"><div class="pht-triptych-panel"><div class="pht-input-grid" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div><small>[输入图占位]</small></div><div class="pht-triptych-panel"><div class="pht-method-shape" aria-hidden="true"></div><small>[方法图占位]</small></div><div class="pht-triptych-panel"><div class="pht-output-shape" aria-hidden="true"><b></b><b></b><b></b></div><small>[结果图占位]</small></div></div><figcaption class="pht-preview-caption">[概览图说明] 用一张图解释问题、方法和结果。此处为示意占位，不包含实验数据。</figcaption></figure>
+        <div class="pht-research-body">
+          <section class="pht-paper-section" id="research-abstract" aria-labelledby="research-abstract-title"><h2 id="research-abstract-title">摘要 / Abstract</h2><p>在这里介绍研究问题、现有方法的局限、你的核心思路及主要贡献。建议使用一个简洁的段落，帮助读者判断这项研究是否与自己相关。所有方法、结论和数字都应替换为你已确认可以公开的内容。</p></section>
+          <section class="pht-paper-section" id="research-method" aria-labelledby="research-method-title"><h2 id="research-method-title">方法与贡献</h2><p>[方法概述] 用清楚的语言说明整体流程，可将上方的占位示意图替换为你的方法图。</p><div class="pht-contributions"><article><h3>[贡献标题一]</h3><p>概括一个独立的研究贡献，以及它为什么重要。</p></article><article><h3>[贡献标题二]</h3><p>说明关键设计或方法，可以配合示意图展开。</p></article><article><h3>[贡献标题三]</h3><p>描述经过验证的发现，不在模板中预设结果。</p></article></div></section>
+          <section class="pht-paper-section" id="research-citation" aria-labelledby="research-citation-title"><div class="pht-citation-heading"><h2 id="research-citation-title">引用 / Citation</h2><button class="pht-button cursor-interaction" type="button" data-copy-citation>复制引用</button></div><pre class="pht-citation" data-citation>@misc{your_project,
+  title = {Your project title},
+  author = {Your name},
+  year = {YYYY},
+  url = {Your public project URL}
+}</pre><div class="pht-copy-status" data-copy-status aria-live="polite"></div></section>
+        </div>
+      </main>
+      <footer class="pht-footer"><span class="pht-footer-brand">PROJECT / TEMPLATE</span><span>作者、机构、方法与成果均为占位内容</span></footer>
+    </div>
+  </div>
+</body>
+</html>
